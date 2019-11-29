@@ -1,0 +1,29 @@
+{
+  "name": "blog2",
+  "version": "1.0.0",
+  "description": "My mind-blowing Nuxt.js project",
+  "author": "!dox",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/auth": "^4.8.4",
+    "@nuxtjs/axios": "^5.8.0",
+    "moment": "^2.24.0",
+    "nuxt": "^2.0.0",
+    "particles.js": "^2.0.0"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "@fortawesome/vue-fontawesome": "^0.1.8",
+    "@mdi/font": "^4.6.95",
+    "@nuxtjs/vuetify": "^1.0.0",
+    "material-design-icons-iconfont": "^5.0.1"
+  }
+}
