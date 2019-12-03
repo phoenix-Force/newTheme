@@ -35,7 +35,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    { src: '~plugins/fontAwesome', ssr: false }
+    { src: '~plugins/fontAwesome', ssr: false },
+    {src:'~plugins/apexChart',ssr:false}
   ],
   /*
   ** Nuxt.js dev-modules

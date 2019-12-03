@@ -13,9 +13,11 @@
   "dependencies": {
     "@nuxtjs/auth": "^4.8.4",
     "@nuxtjs/axios": "^5.8.0",
+    "apexcharts": "^3.10.1",
     "moment": "^2.24.0",
     "nuxt": "^2.0.0",
-    "particles.js": "^2.0.0"
+    "particles.js": "^2.0.0",
+    "vue-apexcharts": "^1.5.1"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.11.2",

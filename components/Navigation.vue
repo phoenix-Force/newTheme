@@ -55,7 +55,7 @@
         v-model="$vuetify.theme.dark"
           primary
           label="Dark"
-          class="float-right"
+          class="float-right my-auto text--center"
       />
       <v-badge>
         <template v-slot:badge>0</template>
