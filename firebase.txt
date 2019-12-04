@@ -1,0 +1,23 @@
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCwOkTFFKYXI6Yk6zQQHgk1z-p-8RICQME",
+    authDomain: "paradox-7274.firebaseapp.com",
+    databaseURL: "https://paradox-7274.firebaseio.com",
+    projectId: "paradox-7274",
+    storageBucket: "paradox-7274.appspot.com",
+    messagingSenderId: "416556691679",
+    appId: "1:416556691679:web:b196338e607a36b3ed796a",
+    measurementId: "G-LEH2DNT742"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>

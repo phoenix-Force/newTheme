@@ -1,5 +1,5 @@
 import colors from 'vuetify/es5/util/colors'
-
+require('dotenv').config()
 export default {
   mode: 'universal',
   /*
@@ -36,7 +36,8 @@ export default {
   */
   plugins: [
     { src: '~plugins/fontAwesome', ssr: false },
-    {src:'~plugins/apexChart',ssr:false}
+    {src:'~plugins/apexChart',ssr:false},
+    {src:'~plugins/firebase'}
   ],
   /*
   ** Nuxt.js dev-modules
@@ -49,6 +50,26 @@ export default {
   */
   modules: [
   ],
+  /*
+  auth
+  */
+  auth: {
+    strategies: {
+      local: {
+        endpoints: {
+          login: { url: 'auth/login', method: 'post', propertyName: 'data.access_token' },
+          logout: { url: 'user/logout', method: 'post' },
+          user: { url: 'account', method: 'get', propertyName: 'data.user' }
+        },
+        tokenRequired: true,
+        tokenType: null
+      }
+    },
+    redirect: {
+        logout: '/',
+        login: '/'
+    },
+  },
   /*
   ** vuetify module configuration
   ** https://github.com/nuxt-community/vuetify-module
@@ -69,6 +90,10 @@ export default {
         }
       }
     }
+  },
+  axios: {
+    baseURL: process.env.API_URL,
+    // prefix: '/api/v1',
   },
   /*
   ** Build configuration
