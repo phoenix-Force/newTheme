@@ -1,7 +1,7 @@
 <template>
 <v-container fluid class="mx-0 px-0">
   <v-row>
-    <v-col  cols="12" md="3" :key="index" v-for="(i,index) in 8">
+    <v-col  cols="12" md="3" :key="index" v-for="(k,index) in 8">
       <palet/>
     </v-col>
   </v-row>

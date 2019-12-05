@@ -2,8 +2,8 @@
   <v-container fluid class="pa-0" >
     <v-row class="pa-0">
       <v-col sm="12"  class="pa-0">
-        <v-img ripple :src = "src" width="100%" height="100%" style="width: 100%; height: 100%; "></v-img>
-        <!-- <canvas width="100%" height="100%" style="width: 100%; height: 100%; " class="c"></canvas> -->
+        <v-img ripple :src = "dtls.imageSrc" width="100%" height="100%" style="width: 100%; height: 100%; " v-if="dtls.pt== image"></v-img>
+        <canvas width="100%" height="100%" style="width: 100%; height: 100%; " class="c" v-else></canvas>
       </v-col>
     </v-row>
   </v-container>
@@ -14,6 +14,7 @@
 //     let w = c.parentElement.clientWidth;
 //     let h = c.parentElement.clientHeight;
 export default {
+  props:['dtls'],
   data () {
     return {
       src:require("~/assets/images/log3.jpg")
