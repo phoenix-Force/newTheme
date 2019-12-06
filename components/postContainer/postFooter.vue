@@ -119,13 +119,13 @@
       <v-col cols="3">
         <v-container>
           <v-row>
-            <v-btn text icon class="indigo--text darken-2 mx-auto" v-if="commented">
+            <v-btn text icon class="indigo--text darken-2 mx-auto" v-if="commentClicked" @click="cmntclick">
               <v-icon>
                 mdi-comment-multiple
               </v-icon>
             </v-btn>
 
-            <v-btn text icon class="indigo--text darken-2 mx-auto" style="margin-left:40%;" v-else >
+            <v-btn text icon class="indigo--text darken-2 mx-auto" style="margin-left:40%;" @click="cmntclick" v-else >
               <v-icon>
                 mdi-comment-multiple-outline
               </v-icon>
@@ -172,6 +172,7 @@ export default {
       liked:false,
       disliked:false,
       commented:false,
+      commentClicked:false,
       likeslist:[
         "jack",
         "vish"
@@ -211,6 +212,15 @@ export default {
     },
     chk(x){
       console.log(x)
+    },
+    cmntclick(event){
+      if(this.commentClicked){
+        this.commentClicked=false;
+      }
+      else{
+        this.commentClicked=true;
+      }
+      this.$emit('cmntclick',this.commentClicked)
     }
 
 

@@ -39,9 +39,15 @@
     </v-row>
 
     <v-row style="margin-top:1%;" :class="getUserId == userdiss.user.id ?'usr':'other'" >
-        <h5 class="cmnt-txt" style="margin-left:9%;">{{userdiss.msg}}</h5>
-      </v-row>
+      <h5 class="cmnt-txt" style="margin-left:9%;">{{userdiss.msg}}</h5>
+    </v-row>
+
+
+
+
+
   </v-container>
+
 </template>
 <script>
 export default {

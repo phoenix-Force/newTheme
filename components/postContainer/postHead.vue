@@ -1,17 +1,19 @@
 <template>
   <v-container warp fluid class="pa-0">
     <v-row class="pa-0">
+
       <v-col cols="5" md="2" >
         <v-img
-          :src="src"
+          :src="user.profilePic"
           style="height:100%;weight:100%;"
           :aspect-ratio="16/9"
         >
         </v-img>
       </v-col>
       <v-col cols="6" md="9">
-        <h1>Paradox</h1>
-        <h5 class="text--right">Date and time</h5>
+        <h1>{{user.name}}</h1>
+        <h5 class="text--right">{{user.time}}</h5>
+        <h5 class="text--right">{{user.location}}</h5>
       </v-col>
       <v-col cols="1">
         <v-row>
@@ -27,6 +29,7 @@
 </template>
 <script>
 export default {
+  props:['user'],
   data(){
     return{
       src:require("~/assets/images/log3.jpg"),
