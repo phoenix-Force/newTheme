@@ -48,14 +48,15 @@
 import navBar from "~/components/Navigation"
   export default {
     data: () => ({
-      drawer:false,
+      drawer:true,
       footer: {
         inset: false,
       },
     }),
     components:{
       navBar
-    }
+    },
+
   }
 
   // :collapse="!collapseOnScroll"

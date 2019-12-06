@@ -19,12 +19,25 @@
       >
 
       </v-img> -->
+
       <v-list-item-avatar
         tile
         size="80"
-        color="grey"
+
         style="margin-top:25px;"
-      ></v-list-item-avatar>
+      >
+      <v-img
+        style="height:100%;weight:100%;"
+        :aspect-ratio="16/9"
+        tile
+        :src="src"
+        size="80"
+      >
+
+      </v-img>
+
+
+      </v-list-item-avatar>
 
     </v-list-item>
 <!--
@@ -38,7 +51,7 @@
 export default {
   data(){
     return{
-      dp:"https://cdn.vuetifyjs.com/images/parallax/material2.jpg"
+      src:require("~/assets/images/log3.jpg")
     }
   }
   // props:{

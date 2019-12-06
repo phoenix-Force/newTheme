@@ -1,8 +1,22 @@
 <template>
     <v-container>
+      <v-row class="d-flex justify-space-around">
+        <v-btn>
+          photo
+        </v-btn>
+        <v-btn>
+          photo
+        </v-btn>
+        <v-btn>
+          photo
+        </v-btn>
+        <v-btn>
+          photo
+        </v-btn>
+
+      </v-row>
       <v-row  :key="i" v-for="(itr,i) in timeline" >
         <post-model :post="itr.post"/>
-        <!-- {{itr}} -->
       </v-row>
     </v-container>
 </template>
@@ -23,6 +37,127 @@ export default {
             details:{
               pt:"image",
               imageSrc:require("~/assets/images/log3.jpg"),
+            },
+            id:1,
+            caption:"lorem ipsum is the best article that i have ever seen in my entire life",
+            user:{
+              name:"paradox",
+              id:1,
+              location:"kolkata",
+              time:"12/10/19",
+              profilePic:require("~/assets/images/log3.jpg"),
+            },
+            disscussion:[
+              {
+                user:{
+                  name:"paradox",
+                  id:1,
+                  location:"kolkata",
+                  time:"12/10/19",
+                  profilePic:require("~/assets/images/log3.jpg"),
+                },
+                msg:"lorem ipsum"
+              },
+              {
+                user:{
+                  name:"Pi",
+                  id:2,
+                  location:"kolkata",
+                  time:"12/10/19",
+                  profilePic:require("~/assets/images/log3.jpg"),
+                },
+                msg:"lorem ipsum khsihdn"
+              }
+            ]
+          }
+
+        },
+        {
+          post:{
+            details:{
+              pt:"text",
+              imageSrc:require("~/assets/images/log3.jpg"),
+              txt:"I am amnja"
+            },
+            id:1,
+            caption:"lorem ipsum is the best article that i have ever seen in my entire life",
+            user:{
+              name:"paradox",
+              id:1,
+              location:"kolkata",
+              time:"12/10/19",
+              profilePic:require("~/assets/images/log3.jpg"),
+            },
+            disscussion:[
+              {
+                user:{
+                  name:"paradox",
+                  id:1,
+                  location:"kolkata",
+                  time:"12/10/19",
+                  profilePic:require("~/assets/images/log3.jpg"),
+                },
+                msg:"lorem ipsum"
+              },
+              {
+                user:{
+                  name:"Pi",
+                  id:2,
+                  location:"kolkata",
+                  time:"12/10/19",
+                  profilePic:require("~/assets/images/log3.jpg"),
+                },
+                msg:"lorem ipsum khsihdn"
+              }
+            ]
+          }
+
+        },
+        {
+          post:{
+            details:{
+              pt:"image",
+              imageSrc:require("~/assets/images/log.jpg"),
+            },
+            id:1,
+            caption:"lorem ipsum is the best article that i have ever seen in my entire life",
+            user:{
+              name:"paradox",
+              id:1,
+              location:"kolkata",
+              time:"12/10/19",
+              profilePic:require("~/assets/images/log3.jpg"),
+            },
+            disscussion:[
+              {
+                user:{
+                  name:"paradox",
+                  id:1,
+                  location:"kolkata",
+                  time:"12/10/19",
+                  profilePic:require("~/assets/images/log3.jpg"),
+                },
+                msg:"lorem ipsum"
+              },
+              {
+                user:{
+                  name:"Pi",
+                  id:2,
+                  location:"kolkata",
+                  time:"12/10/19",
+                  profilePic:require("~/assets/images/log3.jpg"),
+                },
+                msg:"lorem ipsum khsihdn"
+              }
+            ]
+          }
+
+        },
+        {
+          post:{
+            details:{
+              pt:"image",
+              imageSrc:require("~/assets/images/log2.jpg"),
             },
             id:1,
             caption:"lorem ipsum is the best article that i have ever seen in my entire life",
@@ -97,7 +232,8 @@ export default {
             ]
           }
 
-        }
+        },
+
       ],
     }
   },

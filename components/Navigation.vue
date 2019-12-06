@@ -4,6 +4,7 @@
       v-model="drawer"
       app
       overflow
+
       >
       <v-img
         v-ripple = "{class:`white--text`}"
@@ -35,6 +36,8 @@
       </v-spacer>
 
     </v-navigation-drawer>
+
+
 
     <v-app-bar
       absolute
@@ -96,7 +99,18 @@ export default {
 
 
     }),
+    // methods: {
+    //   swipe (direction) {
+    //     console.log(direction);
+    //   },
+    // },
 }
+// v-touch="{
+//         left: () => swipe('Left'),
+//         right: () => swipe('Right'),
+//         up: () => swipe('Up'),
+//         down: () => swipe('Down')
+//       }"
 </script>
 <style scoped>
 .xx{

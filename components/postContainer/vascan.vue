@@ -3,7 +3,10 @@
     <v-row class="pa-0">
       <v-col sm="12"  class="pa-0">
         <v-img ripple :src = "dtls.imageSrc" width="100%" height="100%" style="width: 100%; height: 100%; " v-if="dtls.pt== 'image'"></v-img>
-        <canvas width="100%" height="100%" style="width: 100%; height: 100%; " class="c" v-else></canvas>
+        <!-- <canvas width="100%" height="100%" style="width: 100%; height: 100%; " class="c" v-else></canvas> -->
+        <v-container style="width: 100%; height: 100%; min-height:400px;background-color:light-red;text-align:center;" class="txt" v-else>
+          <!-- <h1>Hello world</h1> -->
+        </v-container>
       </v-col>
     </v-row>
   </v-container>
@@ -21,16 +24,18 @@ export default {
     }
   },
   mounted(){
-    var c = document.querySelector(".c");
-    var ctx = c.getContext("2d");
-    // // this.$refs['my-canvas'].width = this.$refs['my-canvas'].parentElement.clientWidth
-    // let bg = new Image();
-    // bg.src =
-    // ctx.clearRect(0,0,window.innerWidth,window.innerHeight);
-    // console.log(bg);
-    // ctx.drawImage(bg, 0, 0);
-    ctx.fillStyle = "blue";
-    ctx.fillRect(0, 0, c.width, c.height);
+    let d = document.querySelector(".txt");
+    d.innerHTML = ""
+    // var c = document.querySelector(".c");
+    // var ctx = c.getContext("2d");
+    // // // this.$refs['my-canvas'].width = this.$refs['my-canvas'].parentElement.clientWidth
+    // // let bg = new Image();
+    // // bg.src =
+    // // ctx.clearRect(0,0,window.innerWidth,window.innerHeight);
+    // // console.log(bg);
+    // // ctx.drawImage(bg, 0, 0);
+    // ctx.fillStyle = "blue";
+    // ctx.fillRect(0, 0, c.width, c.height);
   }
 }
 </script>

@@ -19,7 +19,8 @@
     "moment": "^2.24.0",
     "nuxt": "^2.0.0",
     "particles.js": "^2.0.0",
-    "vue-apexcharts": "^1.5.1"
+    "vue-apexcharts": "^1.5.1",
+    "vue-picture-input": "^2.1.6"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.11.2",
