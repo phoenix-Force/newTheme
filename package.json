@@ -20,7 +20,9 @@
     "nuxt": "^2.0.0",
     "particles.js": "^2.0.0",
     "vue-apexcharts": "^1.5.1",
-    "vue-picture-input": "^2.1.6"
+    "vue-cover-gallery": "^1.0.7",
+    "vue-picture-input": "^2.1.6",
+    "vue-swimlane": "^0.4.4"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.11.2",

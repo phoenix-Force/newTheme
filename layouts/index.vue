@@ -15,6 +15,13 @@
             <v-row>
               <v-col cols="12">
                 <nuxt/>
+                <v-row>
+                  <v-col class="d-flex justify-end">
+                    <v-btn class="mx-2" style="position:fixed;right:5%;bottom:5%;>Message" fab dark large color="dark">
+                      <v-icon dark>mdi-message-text</v-icon>
+                    </v-btn>
+                  </v-col>
+                </v-row>
               </v-col>
             </v-row>
             <!-- <v-breadcrumbs :items="items">
@@ -39,8 +46,12 @@
       :inset="footer.inset"
       app
     >
+
       <!-- <span class="px-4">&copy; {{ new Date().getFullYear() }}</span> -->
     </v-footer>
+    <v-row class="d-flex justyfy-end">
+
+    </v-row>
   </v-app>
 </template>
 
